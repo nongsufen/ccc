@@ -7,21 +7,15 @@
 	</head>
 	<body>
 		<div id="app">
-			<li v-if="score>=90">优秀</li>
-			<li v-if="score>=80 && score<90">良好</li>
-			<li v-if="score>=70 && score<80">中等</li>
-			<li v-if="score>=60 && score<70">及格</li>
-			<li v-if="score>60">不及格</li>
-			{{rdmNumber}}
+			{{userNumber}}<br>
+			<input v-model="userNumber">
 			
 		</div>
-		
 		<script type="text/javascript">
 			let v=new Vue({
 				el:'#app',
 				data:{
-					score:'60',
-					rdmNumber:Math.floor(Math.random()*10)
+					userNumber:'188965767'
 				}
 			})
 		</script>
