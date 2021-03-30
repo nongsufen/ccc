@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			{{shu1}},{{shu2}},{{shu3}},{{shu4}},{{shu5}},{{shu6}}
+			<button v-on:click="shu1=Math.ceil(Math.random()*20); shu2=Math.ceil(Math.random()*20); shu3=Math.ceil(Math.random()*20); shu4=Math.ceil(Math.random()*20); shu5=Math.ceil(Math.random()*20);shu6=Math.ceil(Math.random()*20);  " type="button">红球</button></br>
+			{{lan}}
+			<button v-on:click="lan=Math.ceil(Math.random()*20)">篮球</button>
+		</div>
+		<script type="text/javascript">
+			let v=new Vue({
+				el:'#app',
+				data:{
+					shu1:'',
+					shu2:'',
+					shu3:'',
+					shu4:'',
+					shu5:'',
+					shu6:'',
+					lan:''
+				}
+			})
+		</script>
+	</body>
+</html>
